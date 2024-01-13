@@ -2,16 +2,25 @@ package com.company.ejercicio1;
 
 public class Violin implements InstrumentoMusical {
 
+	private Afinar afinar;
+	
+	public Violin() {
+		super();
+	}
+
+	//dependencia por setter
+	public void setAfinar(Afinar afinar) {
+		this.afinar = afinar;
+	}
+
 	@Override
 	public String obtenerSonido() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Obteniendo sonido del violin";
 	}
 
 	@Override
 	public String obtenerAfinacion() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Violin - " + afinar.afinacion();
 	}
 
 }

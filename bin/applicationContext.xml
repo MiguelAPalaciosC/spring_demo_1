@@ -22,6 +22,11 @@
 		class="com.company.ejercicio1.Guitarra">
 		<constructor-arg ref="afinacion"></constructor-arg>
 	</bean>
+	
+	<bean id="miViolin"
+		class="com.company.ejercicio1.Violin">
+		<property name="afinar" ref="afinacion"></property>
+	</bean>
     
 </beans>
 

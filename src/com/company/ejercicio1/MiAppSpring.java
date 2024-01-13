@@ -16,6 +16,14 @@ public class MiAppSpring {
 		
 		System.out.println(instrumento.obtenerAfinacion());
 		
+		//violin
+		
+		Violin violin = context.getBean("miViolin", Violin.class);
+		
+		System.out.println(violin.obtenerSonido());
+		
+		System.out.println(violin.obtenerAfinacion());
+
 		context.close();// cerramos contexto de spring 
 	}
 
